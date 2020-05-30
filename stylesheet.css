@@ -1,6 +1,70 @@
+@media (max-width: 767.9px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  a {
+    text-decoration: underline;
+  }
+
+  #ba {
+    font-size: xx-small;
+  }
+
+  .water:active {
+    background-color: darkcyan;
+  }
+
+  .earth:active {
+    background-color: forestgreen;
+  }
+
+  .fire:active {
+    background-color: firebrick;
+  }
+
+  .air:active {
+    background-color: floralwhite;
+  }
+}
 @font-face {
   font-family: metamorphous;
   src: url(https://fonts.googleapis.com/css?family=Metamorphous);
+}
+.water:hover {
+  background-color: darkcyan;
+}
+
+.earth:hover {
+  background-color: forestgreen;
+}
+
+.meta {
+  font-family: metamorphous;
+  color: #a79b9b;
+}
+
+.fire:hover {
+  background-color: firebrick;
+}
+
+.air:hover {
+  background-color: floralwhite;
+}
+
+table,
+tr,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+tr,
+td {
+  padding: 10px;
+  height: 5%;
+}
+
+table {
+  table-layout: fixed;
+  margin-bottom: 40px;
 }
 
 .norm,
@@ -8,15 +72,15 @@
 #name {
   font-family: Garamound, Baskerville, Baskerville Old Face, Hoefler Text,
     Times New Roman, serif;
-  color: #d3d3d3;
+  color: #a79b9b;
 }
 
-#name {
+/* #name:hover {
   background: -webkit-linear-gradient(135deg, #d3c41e, navy);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+ */
 .dot {
   font-size: 10px;
 }
@@ -27,7 +91,7 @@
 
 body {
   background-color: #2f4f4f;
-  color: #d3d3d3;
+  color: #a79b9b;
 }
 
 #groot-contact {
@@ -43,6 +107,10 @@ body {
   color: #99cfe0;
 }
 
+#z {
+  color: #a79b9b;
+}
+
 #z:hover {
   background: #e22822;
   -webkit-background-clip: text;
@@ -56,41 +124,20 @@ body {
 }
 
 .body-color {
-  background: -webkit-linear-gradient(
-    top,
-    rgb(136, 199, 201) 58%,
-    rgb(202, 232, 235) 100%
-  );
-  background: -moz-linear-gradient(
-    top,
-    rgb(136, 199, 201) 58%,
-    rgb(202, 232, 235) 100%
-  );
-  background: -ms-linear-gradient(
-    top,
-    rgb(136, 199, 201) 58%,
-    rgb(202, 232, 235) 100%
-  );
-  background: -o-linear-gradient(
-    top,
-    rgb(136, 199, 201) 58%,
-    rgb(202, 232, 235) 100%
-  );
-  background: linear-gradient(
-    top,
-    rgb(136, 199, 201) 58%,
-    rgb(202, 232, 235) 100%
-  );
+  background: -webkit-linear-gradient(top, #88c7c9 58%, #cae8eb 100%);
+  background: -moz-linear-gradient(top, #88c7c9 58%, #cae8eb 100%);
+  background: -ms-linear-gradient(top, #88c7c9 58%, #cae8eb 100%);
+  background: -o-linear-gradient(top, #88c7c9 58%, #cae8eb 100%);
+  background: linear-gradient(top, #88c7c9 58%, #cae8eb 100%);
   padding: 3%;
   height: 94%;
 }
 
 /* $paper: #efe4e4; */
-
 .paper {
   /* font: normal 12px/1.5 "Lucida Grande", arial, sans-serif; */
   width: 50%;
-  /* height: 80%; */
+  /* height: 600px; */
   margin: 0 auto;
   padding: 6px 5px 4px 55px;
   position: relative;
@@ -98,7 +145,6 @@ body {
   line-height: 20px;
   border: 1px solid #d2d2d2;
   background: #fff;
-
   background: -webkit-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
   background: -moz-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
   background: -ms-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
@@ -117,6 +163,7 @@ body {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
   width: 816px;
 }
+
 .paper::before {
   content: "";
   position: absolute;
@@ -127,6 +174,7 @@ body {
   border: 1px solid;
   border-color: transparent;
 }
+
 .paper::after {
   content: "";
   position: absolute;
@@ -140,7 +188,6 @@ body {
 .head {
   background-color: #fff;
   min-height: 114px;
-
   margin-left: -55px;
   margin-right: -4px;
   margin-top: -4px;
@@ -168,3 +215,5 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/*# sourceMappingURL=stylesheet.css.map */
